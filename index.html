@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Home Business Builder — Microsoft Partner‑Style AI Suite</title>
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+<header class="hero">
+  <nav class="topnav">
+    <div class="brand">
+      <img src="assets/img/logo.svg" alt="Logo">
+      <span>Home Business Builder</span>
+    </div>
+    <div class="navlinks">
+      <a href="#features">Features</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#demos">Live Demos</a>
+      <a class="btn apply" href="#apply">Apply</a>
+    </div>
+  </nav>
+  <div class="hero-grid">
+    <div class="hero-copy">
+      <h1><span class="accent">Microsoft Partner‑style</span> AI App for Building Businesses from Home</h1>
+      <p class="kicker">Create documents, track emails, plan slides, draft blogs, spin up websites, and manage leads — all in your browser. Try every tool below.</p>
+      <ul class="hero-bullets">
+        <li>One‑file GitHub Pages deploy — no backend needed</li>
+        <li>Pixar‑inspired mascots for a friendly, modern look</li>
+        <li>Ready‑to‑sell licensing with live demos</li>
+      </ul>
+      <div class="cta-row">
+        <a class="btn primary" href="#demos">Try the Live Demos</a>
+        <a class="btn ghost" href="#pricing">See Pricing</a>
+      </div>
+      <p class="tiny-note">*Not affiliated with Microsoft. Demo template only.</p>
+    </div>
+    <div class="hero-art">
+      <img class="mascot male" src="assets/img/mascot_male.svg" alt="Mascot male">
+      <img class="mascot female" src="assets/img/mascot_female.svg" alt="Mascot female">
+    </div>
+  </div>
+</header>
+
+<section id="features" class="features">
+  <h2>What’s inside</h2>
+  <div class="grid cards">
+    <div class="card">
+      <h3>Doc Maker (Word‑like)</h3>
+      <p>Draft proposals, SOPs, and checklists with AI‑style prompts. Export to .txt.</p>
+      <a href="#demo-docs" class="btn small">Open Demo</a>
+    </div>
+    <div class="card">
+      <h3>Email Tracker</h3>
+      <p>Log outreach by client, simulate opens/clicks, export CSV.</p>
+      <a href="#demo-email" class="btn small">Open Demo</a>
+    </div>
+    <div class="card">
+      <h3>Slide Generator</h3>
+      <p>Create presentation outlines; auto‑format slide cards you can copy.</p>
+      <a href="#demo-slides" class="btn small">Open Demo</a>
+    </div>
+    <div class="card">
+      <h3>Spreadsheet Lite</h3>
+      <p>Simple table with quick math and <code>=SUM</code> support.</p>
+      <a href="#demo-sheet" class="btn small">Open Demo</a>
+    </div>
+    <div class="card">
+      <h3>Blog Assistant</h3>
+      <p>Title → outline → draft post with sections.</p>
+      <a href="#demo-blog" class="btn small">Open Demo</a>
+    </div>
+    <div class="card">
+      <h3>Sales Copy Assistant</h3>
+      <p>PAS framework, bullets, and CTA generator.</p>
+      <a href="#demo-sales" class="btn small">Open Demo</a>
+    </div>
+    <div class="card">
+      <h3>Website Generator</h3>
+      <p>Describe your business → exports a single‑file landing page.</p>
+      <a href="#demo-site" class="btn small">Open Demo</a>
+    </div>
+    <div class="card">
+      <h3>Leads Tracker</h3>
+      <p>Capture leads, tag, and export as CSV.</p>
+      <a href="#demo-leads" class="btn small">Open Demo</a>
+    </div>
+  </div>
+</section>
+
+<section id="pricing" class="pricing">
+  <h2>Simple Pricing</h2>
+  <p class="center note">Tap a card to preview the exact experience your buyers will get.</p>
+  <div class="grid price-cards">
+    <div class="price-card">
+      <div class="tier">Starter</div>
+      <div class="price">$7</div>
+      <ul>
+        <li>Doc Maker + Blog Assistant</li>
+        <li>Website Generator (basic)</li>
+        <li>1 Mascot Pack</li>
+      </ul>
+      <a class="btn primary" href="#demos">Try Demos</a>
+    </div>
+    <div class="price-card featured">
+      <div class="tier">Pro</div>
+      <div class="price">$39</div>
+      <ul>
+        <li>All 8 Tools + CSV Export</li>
+        <li>Full Mascots (M/F)</li>
+        <li>Commercial Resale License</li>
+      </ul>
+      <a class="btn primary" href="#apply">Apply / Buy</a>
+    </div>
+    <div class="price-card">
+      <div class="tier">Studio</div>
+      <div class="price">$99</div>
+      <ul>
+        <li>White‑label + Branding Kit</li>
+        <li>Priority Support</li>
+        <li>Extra Templates</li>
+      </ul>
+      <a class="btn primary" href="#apply">Apply / Buy</a>
+    </div>
+  </div>
+</section>
+
+<section id="demos" class="demos">
+  <h2>Live Demos</h2>
+  <p class="center note">Each tool below includes sample prompts and produces an output immediately.</p>
+
+  <!-- Doc Maker -->
+  <div id="demo-docs" class="demo">
+    <h3>Doc Maker (Word‑like)</h3>
+    <div class="demo-row">
+      <textarea id="docPrompt" placeholder="e.g., 'Create a 1‑page SOP for onboarding a new remote VA'"></textarea>
+      <button class="btn" onclick="App.docMaker()">Generate</button>
+      <button class="btn ghost" onclick="App.downloadText('docOutput','SOP.txt')">Export .txt</button>
+    </div>
+    <pre id="docOutput" class="output"></pre>
+    <details class="samples"><summary>Sample prompts</summary>
+      <ul>
+        <li>Write a client proposal for a social media package (silver tier)</li>
+        <li>Weekly content checklist for home‑business owners</li>
+        <li>Project brief: Launch a Microsoft 365 training mini‑course</li>
+      </ul>
+    </details>
+  </div>
+
+  <!-- Email Tracker -->
+  <div id="demo-email" class="demo">
+    <h3>Email Tracker</h3>
+    <div class="flex gap">
+      <input id="etClient" placeholder="Client name">
+      <input id="etEmail" placeholder="Email">
+      <input id="etSubject" placeholder="Subject">
+      <button class="btn" onclick="App.etLog()">Log Email</button>
+      <button class="btn ghost" onclick="App.etSimulate()">Simulate Open</button>
+      <button class="btn ghost" onclick="App.etCSV()">Export CSV</button>
+    </div>
+    <table id="etTable"><thead><tr><th>Client</th><th>Email</th><th>Subject</th><th>Opens</th><th>Last Activity</th></tr></thead><tbody></tbody></table>
+    <p class="tiny-note">Local demo only. Tracks in your browser storage.</p>
+  </div>
+
+  <!-- Slide Generator -->
+  <div id="demo-slides" class="demo">
+    <h3>Slide Generator</h3>
+    <div class="demo-row">
+      <input id="slideTopic" placeholder="Topic (e.g., 'Home Business Kickstart')">
+      <button class="btn" onclick="App.slideGen()">Generate Outline</button>
+    </div>
+    <div id="slidesWrap" class="slides"></div>
+  </div>
+
+  <!-- Spreadsheet Lite -->
+  <div id="demo-sheet" class="demo">
+    <h3>Spreadsheet Lite</h3>
+    <div class="demo-row">
+      <button class="btn" onclick="App.sheetAddRow()">Add Row</button>
+      <button class="btn ghost" onclick="App.sheetSum()">Insert =SUM</button>
+    </div>
+    <table id="sheetTable" class="sheet"><thead><tr><th>Item</th><th>Qty</th><th>Price</th><th>Total</th></tr></thead><tbody></tbody></table>
+  </div>
+
+  <!-- Blog Assistant -->
+  <div id="demo-blog" class="demo">
+    <h3>Blog Assistant</h3>
+    <div class="demo-row">
+      <input id="blogTitle" placeholder="Title (e.g., '10 Side Hustles Using Microsoft 365')">
+      <button class="btn" onclick="App.blogAssist()">Draft Post</button>
+    </div>
+    <pre id="blogOut" class="output"></pre>
+  </div>
+
+  <!-- Sales Copy Assistant -->
+  <div id="demo-sales" class="demo">
+    <h3>Sales Copy Assistant</h3>
+    <div class="demo-row">
+      <input id="salesProduct" placeholder="Product (e.g., 'Home Business Builder Pro')">
+      <button class="btn" onclick="App.salesCopy()">Generate Copy</button>
+    </div>
+    <pre id="salesOut" class="output"></pre>
+  </div>
+
+  <!-- Website Generator -->
+  <div id="demo-site" class="demo">
+    <h3>Website Generator</h3>
+    <div class="demo-row">
+      <input id="siteName" placeholder="Business name (e.g., 'DollHouse Digital Studio')">
+      <textarea id="sitePitch" placeholder="Describe your offer..."></textarea>
+      <button class="btn" onclick="App.siteGen()">Export Landing .html</button>
+    </div>
+    <pre id="siteOut" class="output"></pre>
+  </div>
+
+  <!-- Leads Tracker -->
+  <div id="demo-leads" class="demo">
+    <h3>Leads Tracker</h3>
+    <div class="flex gap">
+      <input id="leadName" placeholder="Full name">
+      <input id="leadEmail" placeholder="Email">
+      <input id="leadTag" placeholder="Tag (e.g., warm, cold)">
+      <button class="btn" onclick="App.leadAdd()">Add Lead</button>
+      <button class="btn ghost" onclick="App.leadCSV()">Export CSV</button>
+    </div>
+    <table id="leadTable"><thead><tr><th>Name</th><th>Email</th><th>Tag</th><th>Date</th></tr></thead><tbody></tbody></table>
+  </div>
+</section>
+
+<section id="apply" class="apply">
+  <h2>Apply / Buy</h2>
+  <p>Ready to resell this suite? Use the form below to “apply”. In your live site, replace this with your checkout (Stripe, WarriorPlus, etc.).</p>
+  <form class="apply-form" onsubmit="App.fakeApply(event)">
+    <input required placeholder="Full Name">
+    <input required placeholder="Email">
+    <select required>
+      <option value="">Choose a license</option>
+      <option>Starter — $7</option>
+      <option>Pro — $39</option>
+      <option>Studio — $99</option>
+    </select>
+    <button class="btn primary" type="submit">Submit</button>
+  </form>
+  <pre id="applyOut" class="output"></pre>
+</section>
+
+<footer class="footer">
+  <p>© <span id="year"></span> Home Business Builder — Demo Template. Not affiliated with Microsoft.</p>
+</footer>
+
+<script src="assets/js/app.js"></script>
+</body>
+</html>
