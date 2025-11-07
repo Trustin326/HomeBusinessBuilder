@@ -1,0 +1,77 @@
+/* Home Business Builder â€” colorful, partnerâ€‘style UI */
+:root{
+  --bg:#0b1020;
+  --card:#121935;
+  --ink:#e9ecff;
+  --muted:#b9c1ff;
+  --accent:#6ee7ff;
+  --accent2:#a78bfa;
+  --accent3:#34d399;
+  --brandA:#f59e0b;
+  --brandB:#ef4444;
+  --glass:rgba(255,255,255,.08);
+  --shadow: 0 10px 30px rgba(0,0,0,.35);
+}
+
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;font-family:Poppins,system-ui,-apple-system,Segoe UI,Roboto,sans-serif;background:linear-gradient(180deg,#0a0e20,#0f1630);color:var(--ink)}
+a{color:var(--accent)}
+header.hero{padding:28px 20px 60px}
+.topnav{display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand{display:flex;align-items:center;gap:12px;font-weight:800;letter-spacing:.3px}
+.brand img{width:36px;height:36px}
+.navlinks a{margin-left:16px;text-decoration:none}
+.navlinks .btn{margin-left:10px}
+.btn{display:inline-block;padding:10px 16px;border-radius:10px;background:var(--accent);color:#021025;font-weight:700;text-decoration:none;box-shadow:var(--shadow);border:0;cursor:pointer}
+.btn.ghost{background:transparent;border:2px solid var(--accent);color:var(--ink)}
+.btn.small{padding:8px 12px;font-size:.9rem}
+.btn.primary{background:linear-gradient(90deg,var(--accent),var(--accent2))}
+.apply{scroll-margin-top:80px}
+.hero-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:24px;margin-top:28px;align-items:center}
+.hero-copy h1{font-size:clamp(28px,4.2vw,52px);line-height:1.05;margin:0 0 12px}
+.accent{background:linear-gradient(90deg,var(--accent),var(--brandA));-webkit-background-clip:text;background-clip:text;color:transparent}
+.kicker{color:var(--muted)}
+.hero-bullets{margin:14px 0 18px;padding-left:18px}
+.hero-bullets li{margin:6px 0}
+.cta-row{display:flex;gap:12px;align-items:center;margin:12px 0 6px}
+.tiny-note{font-size:.8rem;color:#c7ccff7a}
+.hero-art{position:relative;min-height:260px}
+.mascot{position:absolute;filter:drop-shadow(0 14px 22px rgba(0,0,0,.4))}
+.mascot.male{right:8%;top:0;width:220px}
+.mascot.female{left:2%;bottom:-10px;width:260px}
+
+section{padding:54px 20px;max-width:1100px;margin:0 auto}
+.features .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
+.card{background:var(--card);border:1px solid #263159;border-radius:16px;padding:16px;box-shadow:var(--shadow)}
+.card h3{margin:0 0 8px}
+.pricing .price-cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px;margin-top:14px}
+.price-card{background:var(--glass);border:1px solid #2b355f;border-radius:18px;padding:18px;text-align:center;backdrop-filter:blur(6px)}
+.price-card .tier{font-weight:800;letter-spacing:.6px}
+.price-card .price{font-size:40px;margin:8px 0;background:linear-gradient(90deg,var(--brandA),var(--brandB));-webkit-background-clip:text;background-clip:text;color:transparent}
+.price-card ul{list-style:none;padding-left:0;line-height:1.6}
+.price-card.featured{outline:2px solid var(--accent);box-shadow:0 0 0 6px #00e5ff12}
+.center{text-align:center}
+.note{color:var(--muted)}
+
+.demos .demo{margin:24px 0;padding:16px;border-radius:18px;background:var(--card);border:1px solid #2a3666;box-shadow:var(--shadow)}
+.demo h3{margin-top:0}
+.demo-row{display:flex;gap:10px;flex-wrap:wrap}
+textarea,input{background:#0e1535;border:1px solid #27336a;color:var(--ink);padding:10px;border-radius:10px;min-width:240px;flex:1}
+textarea{min-height:64px}
+.output{background:#0c1230;border:1px dashed #33407e;color:#dfe4ff;padding:14px;border-radius:12px;white-space:pre-wrap}
+.flex{display:flex;flex-wrap:wrap}
+.gap{gap:10px}
+
+table{width:100%;border-collapse:collapse;margin-top:10px}
+th,td{border-bottom:1px solid #263159;padding:10px;text-align:left}
+.sheet td{min-width:120px}
+
+.slides{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;margin-top:12px}
+.slide{background:linear-gradient(180deg,#141c44,#12172f);border:1px solid #2b3564;border-radius:16px;padding:12px;box-shadow:var(--shadow)}
+.footer{padding:30px 20px;color:#9aa3ff4f;text-align:center;border-top:1px solid #263159;margin-top:50px}
+
+@media (max-width: 920px){
+  .hero-grid{grid-template-columns:1fr}
+  .mascot.male{position:relative;right:auto;top:auto;margin-left:auto;display:block}
+  .mascot.female{display:none}
+}
