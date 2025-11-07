@@ -1,1 +1,19 @@
-
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 420">
+<defs>
+  <linearGradient id="skinF" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#ffd9c9"/><stop offset="1" stop-color="#ffc2a8"/>
+  </linearGradient>
+  <linearGradient id="dress" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#34d399"/><stop offset="1" stop-color="#22d3ee"/>
+  </linearGradient>
+</defs>
+<circle cx="180" cy="120" r="70" fill="url(#skinF)"/>
+<ellipse cx="180" cy="210" rx="95" ry="65" fill="url(#dress)"/>
+<rect x="120" y="260" width="120" height="120" rx="24" fill="#2b2f55"/>
+<circle cx="155" cy="118" r="10" fill="#0b1020"/><circle cx="205" cy="118" r="10" fill="#0b1020"/>
+<path d="M150 150q30 22 60 0" fill="none" stroke="#0b1020" stroke-width="6" stroke-linecap="round"/>
+<path d="M120 80q60-40 120 0" fill="none" stroke="#0b1020" stroke-width="10" stroke-linecap="round"/>
+<rect x="85" y="280" width="34" height="90" rx="12" fill="#141a3a"/>
+<rect x="241" y="280" width="34" height="90" rx="12" fill="#141a3a"/>
+<circle cx="135" cy="340" r="18" fill="#0b1020"/><circle cx="230" cy="340" r="18" fill="#0b1020"/>
+</svg>
